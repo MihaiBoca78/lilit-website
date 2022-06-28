@@ -1,0 +1,59 @@
+.titel__logo {
+  position: relative;
+  bottom: 39%;
+  left: 68%;
+
+  @media only screen and (max-width: $bp-largest) {
+    position: relative;
+    left: 68%;
+    bottom: 39rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    position: relative;
+    left: 76%;
+    bottom: 39rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    position: relative;
+    left: 76%;
+    bottom: 39rem;
+  }
+
+  @media only screen and (max-width: $bp-mitte) {
+    position: relative;
+    left: 76%;
+    bottom: 39rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    position: relative;
+    left: 76%;
+    bottom: 39rem;
+  }
+}
+
+.titel__img {
+  height: 10rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    height: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    height: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    height: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-mitte) {
+    height: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    height: 10rem;
+  }
+}

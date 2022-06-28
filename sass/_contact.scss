@@ -1,0 +1,210 @@
+.contact {
+  display: grid;
+  grid-area: contact;
+  background-color: $color-grey-light-1;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, -16% 7%);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, -16% 7%);
+  margin-top: -1rem;
+}
+
+.contact__me {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--form {
+    width: 100%;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 50rem;
+    margin-bottom: 40rem;
+  }
+
+  &--contact-form {
+    background: $color-secondary;
+    position: relative;
+  }
+
+  &--contact-form:before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    //background-color: #1abc9c;
+    background: $color-secondary;
+    transform: rotate(45deg);
+    top: 50px;
+    left: -13px;
+  }
+
+  &--title {
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 1;
+    margin-bottom: 8rem;
+  }
+
+  &--btn {
+    padding: 0.6rem 1.3rem;
+    background-color: $color-primary;
+    border: 2px solid #fafafa;
+    font-size: 1.6rem;
+    color: $color-secondary;
+    line-height: 1;
+    border-radius: 25px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0;
+  }
+
+  &--btn:hover {
+    background-color: transparent;
+    color: $color-primary;
+  }
+
+  &--contact-info {
+    padding: 2.3rem 2.2rem;
+  }
+
+  &--contact-info &--title {
+    color: $color-secondary;
+  }
+
+  &--contact-info &--title {
+    color: $color-secondary;
+  }
+
+  &--text {
+    color: #333;
+    margin: 1.5rem 0 2rem 0;
+    font-size: 1.6rem;
+    padding-bottom: 6rem;
+  }
+
+  &--information {
+    display: flex;
+    color: #555;
+    margin: 3rem 0;
+    align-items: center;
+    font-size: 1.6rem;
+  }
+
+  &--icon {
+    width: 28px;
+    margin-right: 0.7rem;
+  }
+}
+
+form {
+  padding: 2.3rem 2.2rem;
+  z-index: 10;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 5rem;
+}
+
+.input-container {
+  position: relative;
+  margin: 3rem 0;
+}
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 2px solid #fafafa;
+  background: none;
+  padding: 1.6rem 1.2rem;
+  color: $color-primary;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 0.5px;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+textarea.input {
+  padding: 1.6rem 1.2rem;
+  min-height: 150px;
+  border-radius: 22px;
+  resize: none;
+  overflow-y: auto;
+  font-size: 1.5rem;
+}
+
+.input-container label {
+  position: absolute;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  padding: 0 0.4rem;
+  color: #fafafa;
+  font-size: 1.5rem;
+  font-weight: 400;
+  pointer-events: none;
+  z-index: 1000;
+  transition: 0.5s;
+}
+
+.input-container.textarea label {
+  top: 2rem;
+  transform: translateY(0);
+}
+
+.input-container span {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  padding: 0 0.4rem;
+  color: transparent;
+  pointer-events: none;
+  z-index: 500;
+}
+
+.input-container span:before,
+.input-container span:after {
+  content: '';
+  position: absolute;
+  width: 10%;
+  opacity: 0;
+  transition: 0.3s;
+  height: 5px;
+  background-color: $color-secondary;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.input-container span:before {
+  left: 50%;
+}
+
+.input-container span:after {
+  right: 50%;
+}
+
+.input-container.focus label {
+  top: 0;
+  transform: translateY(-50%);
+  left: 25px;
+  font-size: 1.2rem;
+}
+
+.input-container.focus span:before,
+.input-container.focus span:after {
+  width: 50%;
+  opacity: 1;
+}

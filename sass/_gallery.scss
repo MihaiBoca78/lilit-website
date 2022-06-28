@@ -1,0 +1,263 @@
+.gallery {
+  display: grid;
+  grid-area: gallery;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+    url('/img/bg-gallery6.jpg') center/cover no-repeat fixed;
+  //clip-path: polygon(100% 12%, 100% 100%, 0 91%, 0 3%);
+  //-webkit-clip-path: polygon(100% 12%, 100% 100%, 0 95%, 0 4%);
+
+  //clip-path: polygon(100% 12%, 100% 100%, 0 91%, 0 3%);
+  // -webkit-clip-path: polygon(100% 2%, 100% 100%, 0 95%, 0 4%);
+  margin-top: -8rem;
+  margin-bottom: -11rem;
+}
+
+.gallery-h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 70rem;
+  margin-bottom: 2rem;
+  padding-bottom: 40rem;
+  font-size: 8rem;
+  color: $color-primary;
+  font-family: 'Dancing Script';
+}
+
+.gallery-h2 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4.5rem;
+  font-family: 'Dancing Script';
+  color: $color-primary;
+}
+
+.outdoor-h2 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4.5rem;
+  font-family: 'Dancing Script';
+  align-items: center;
+  color: $color-primary;
+}
+
+.radio {
+  display: none;
+}
+
+.container {
+  position: relative;
+  margin: auto;
+  min-width: 1100px;
+
+  @media only screen and (max-width: $bp-largest) {
+    position: relative;
+    padding-left: 20px;
+    //padding-right: 5%;
+    min-width: 1000px;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    position: relative;
+    margin: auto;
+    min-width: 900px;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    position: relative;
+    margin: auto;
+    min-width: 700px;
+  }
+
+  @media only screen and (max-width: $bp-mitte) {
+    min-width: 600px;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    min-width: 500px;
+  }
+}
+
+.slider {
+  width: 100%;
+  position: absolute;
+  height: 0;
+  padding-top: 56.25%;
+  background: #141414;
+  overflow: hidden;
+  border: 1px #2e2e2e;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: 1.3s;
+}
+
+.dots {
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dots label {
+  width: 18px;
+  height: 18px;
+  background: $color-primary;
+  margin: 0 10px;
+  border-radius: 40px;
+  cursor: pointer;
+  //border: 1px solid #000;
+  //opacity: 0.8;
+}
+
+.dots label:hover {
+  opacity: 0.7;
+}
+
+#radio-1:checked ~ #slide-1,
+#radio-2:checked ~ #slide-2,
+#radio-3:checked ~ #slide-3,
+#radio-4:checked ~ #slide-4,
+#radio-5:checked ~ #slide-5,
+#radio-6:checked ~ #slide-6,
+#radio-7:checked ~ #slide-7,
+#radio-8:checked ~ #slide-8,
+#radio-9:checked ~ #slide-9,
+#radio-10:checked ~ #slide-10,
+#radio-11:checked ~ #slide-11,
+#radio-12:checked ~ #slide-12 {
+  opacity: 1;
+}
+
+#radio-1:checked ~ #slide-1 img,
+#radio-2:checked ~ #slide-2 img,
+#radio-3:checked ~ #slide-3 img,
+#radio-4:checked ~ #slide-4 img,
+#radio-5:checked ~ #slide-5 img,
+#radio-6:checked ~ #slide-6 img,
+#radio-7:checked ~ #slide-7 img,
+#radio-8:checked ~ #slide-8 img,
+#radio-9:checked ~ #slide-9 img,
+#radio-10:checked ~ #slide-10 img,
+#radio-11:checked ~ #slide-11 img,
+#radio-12:checked ~ #slide-12 img {
+  transform: scale(1);
+}
+
+#radio-1:checked ~ #slide-1,
+#radio-2:checked ~ #slide-2,
+#radio-3:checked ~ #slide-3,
+#radio-4:checked ~ #slide-4,
+#radio-5:checked ~ #slide-5,
+#radio-6:checked ~ #slide-6,
+#radio-7:checked ~ #slide-7,
+#radio-8:checked ~ #slide-8,
+#radio-9:checked ~ #slide-9,
+#radio-10:checked ~ #slide-10,
+#radio-11:checked ~ #slide-11,
+#radio-12:checked ~ #slide-12 {
+  opacity: 1;
+}
+
+#radio-1:checked ~ .dots #label-1,
+#radio-2:checked ~ .dots #label-2,
+#radio-3:checked ~ .dots #label-3,
+#radio-4:checked ~ .dots #label-4,
+#radio-5:checked ~ .dots #label-5,
+#radio-6:checked ~ .dots #label-6,
+#radio-7:checked ~ .dots #label-7,
+#radio-8:checked ~ .dots #label-8,
+#radio-9:checked ~ .dots #label-9,
+#radio-10:checked ~ .dots #label-10,
+#radio-11:checked ~ .dots #label-11,
+#radio-12:checked ~ .dots #label-12 {
+  background: $color-secondary;
+  opacity: 1;
+  width: 60px;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}
+
+//part 2
+
+#radio-nr1:checked ~ #slide-nr1,
+#radio-nr2:checked ~ #slide-nr2,
+#radio-nr3:checked ~ #slide-nr3,
+#radio-nr4:checked ~ #slide-nr4,
+#radio-nr5:checked ~ #slide-nr5,
+#radio-nr6:checked ~ #slide-nr6,
+#radio-nr7:checked ~ #slide-nr7,
+#radio-nr8:checked ~ #slide-nr8,
+#radio-nr9:checked ~ #slide-nr9,
+#radio-nr10:checked ~ #slide-nr10,
+#radio-nr11:checked ~ #slide-nr11,
+#radio-nr12:checked ~ #slide-nr12 {
+  opacity: 1;
+}
+
+#radio-nr1:checked ~ #slide-nr1 img,
+#radio-nr2:checked ~ #slide-nr2 img,
+#radio-nr3:checked ~ #slide-nr3 img,
+#radio-nr4:checked ~ #slide-nr4 img,
+#radio-nr5:checked ~ #slide-nr5 img,
+#radio-nr6:checked ~ #slide-nr6 img,
+#radio-nr7:checked ~ #slide-nr7 img,
+#radio-nr8:checked ~ #slide-nr8 img,
+#radio-nr9:checked ~ #slide-nr9 img,
+#radio-nr10:checked ~ #slide-nr10 img,
+#radio-nr11:checked ~ #slide-nr11 img,
+#radio-nr12:checked ~ #slide-nr12 img {
+  transform: scale(1);
+}
+
+#radio-nr1:checked ~ #slide-nr1,
+#radio-nr2:checked ~ #slide-nr2,
+#radio-nr3:checked ~ #slide-nr3,
+#radio-nr4:checked ~ #slide-nr4,
+#radio-nr5:checked ~ #slide-nr5,
+#radio-nr6:checked ~ #slide-nr6,
+#radio-nr7:checked ~ #slide-nr7,
+#radio-nr8:checked ~ #slide-nr8,
+#radio-nr9:checked ~ #slide-nr9,
+#radio-nr10:checked ~ #slide-nr10,
+#radio-nr11:checked ~ #slide-nr11,
+#radio-nr12:checked ~ #slide-nr12 {
+  opacity: 1;
+}
+
+#radio-nr1:checked ~ .dots #label-nr1,
+#radio-nr2:checked ~ .dots #label-nr2,
+#radio-nr3:checked ~ .dots #label-nr3,
+#radio-nr4:checked ~ .dots #label-nr4,
+#radio-nr5:checked ~ .dots #label-nr5,
+#radio-nr6:checked ~ .dots #label-nr6,
+#radio-nr7:checked ~ .dots #label-nr7,
+#radio-nr8:checked ~ .dots #label-nr8,
+#radio-nr9:checked ~ .dots #label-nr9,
+#radio-nr10:checked ~ .dots #label-nr10,
+#radio-nr11:checked ~ .dots #label-nr11,
+#radio-nr12:checked ~ .dots #label-nr12 {
+  background: $color-secondary;
+  opacity: 1;
+  width: 60px;
+  transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  overflow: hidden;
+}

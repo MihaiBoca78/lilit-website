@@ -1,0 +1,62 @@
+// COLOR VARIABLES
+
+$color-primary: #fff;
+$color-secondary: #79dae8;
+$color-grey-light-1: #f9f7f6;
+$color-grey-dark: #777;
+
+// FONT VARIABLES
+$font-primary: 'Nunito', sans-serif;
+$font-display: 'Josefin Sans', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px  1em =16px (1200px : 16em =75)
+$bp-large: 68.75em; // 1100px
+$bp-medium: 62.5em; // 1000px;
+$bp-mitte: 50em; // 800px;
+$bp-small: 43.75em; // 700px;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px/16px = 62.5% -> 1rem = 10px*/
+  scroll-behavior: smooth;
+
+  @media only screen and (max-width: $bp-largest) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: 'poppins', sans-serif;
+  padding: 0;
+  margin: 0;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  //grid-template-columns: 8rem 1fr;
+
+  grid-template-columns: 8rem minmax(min-content, max-content);
+  grid-template-rows: 1fr min-content minmax(1fr);
+
+  grid-template-areas:
+    'sidebar header header'
+    'sidebar aboutme aboutme '
+    'sidebar gallery gallery'
+    'sidebar contact contact '
+    'sidebar main-footer main-footer ';
+}
