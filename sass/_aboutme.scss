@@ -24,6 +24,11 @@
     display: grid;
     grid-template-columns: 1fr;
   }
+
+  @media only screen and (max-width: 500px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 
 .about__left {
@@ -74,10 +79,20 @@
       top: 13rem;
       margin: 0 auto;
     }
+
+    @media only screen and (max-width: 500px) {
+      position: relative;
+      width: 350px;
+      height: 190px;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+      top: 11rem;
+      margin: 0 auto;
+    }
   }
 
   /*hover-section*/
-
   &--card:hover {
     height: 500px;
   }
@@ -250,6 +265,18 @@
       bottom: 34rem;
       margin: 0 auto;
     }
+
+    @media only screen and (max-width: 400px) {
+      position: relative;
+      bottom: 37rem;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 500px) {
+      position: relative;
+      bottom: 33rem;
+      margin: 0 auto;
+    }
   }
 
   &--span {
@@ -277,6 +304,12 @@
       position: relative;
       margin: 0 auto;
       bottom: 35rem;
+    }
+
+    @media only screen and (max-width: 500px) {
+      position: relative;
+      margin: 0 auto;
+      bottom: 34rem;
     }
   }
 
@@ -316,6 +349,12 @@
     @media only screen and (max-width: $bp-small) {
       position: absolute;
       font-size: 2.1rem;
+      margin: 0 auto;
+    }
+
+    @media only screen and (max-width: 600px) {
+      position: absolute;
+      font-size: 1.6rem;
       margin: 0 auto;
     }
   }

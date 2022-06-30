@@ -90,6 +90,45 @@ body {
     cursor: pointer;
     transition: 0.3s;
     margin: 0; }
+    @media only screen and (max-width: 62.5em) {
+      .contact__me--btn {
+        padding: 0.6rem 1.3rem;
+        background-color: #fff;
+        border: 2px solid #fafafa;
+        font-size: 2.6rem;
+        color: #79dae8;
+        line-height: 1;
+        border-radius: 25px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 0; } }
+    @media only screen and (max-width: 50em) {
+      .contact__me--btn {
+        padding: 0.6rem 1.3rem;
+        background-color: #fff;
+        border: 2px solid #fafafa;
+        font-size: 2.6rem;
+        color: #79dae8;
+        line-height: 1;
+        border-radius: 25px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 0; } }
+    @media only screen and (max-width: 43.75em) {
+      .contact__me--btn {
+        padding: 0.6rem 1.3rem;
+        background-color: #fff;
+        border: 2px solid #fafafa;
+        font-size: 2.6rem;
+        color: #79dae8;
+        line-height: 1;
+        border-radius: 25px;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        margin: 0; } }
   .contact__me--btn:hover {
     background-color: transparent;
     color: #fff; }
@@ -462,6 +501,10 @@ textarea.input {
     .aboutme {
       display: grid;
       grid-template-columns: 1fr; } }
+  @media only screen and (max-width: 500px) {
+    .aboutme {
+      display: grid;
+      grid-template-columns: 1fr; } }
 
 .about__left {
   display: flex;
@@ -506,6 +549,16 @@ textarea.input {
         border-radius: 20px;
         box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
         top: 13rem;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 500px) {
+      .about__left--card {
+        position: relative;
+        width: 350px;
+        height: 190px;
+        background: #fff;
+        border-radius: 20px;
+        box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+        top: 11rem;
         margin: 0 auto; } }
   .about__left--card:hover {
     height: 500px; }
@@ -635,6 +688,16 @@ textarea.input {
         position: relative;
         bottom: 34rem;
         margin: 0 auto; } }
+    @media only screen and (max-width: 400px) {
+      .about__right--h1 {
+        position: relative;
+        bottom: 37rem;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 500px) {
+      .about__right--h1 {
+        position: relative;
+        bottom: 33rem;
+        margin: 0 auto; } }
   .about__right--span {
     color: #182e31; }
   .about__right--h2 {
@@ -656,6 +719,11 @@ textarea.input {
         position: relative;
         margin: 0 auto;
         bottom: 35rem; } }
+    @media only screen and (max-width: 500px) {
+      .about__right--h2 {
+        position: relative;
+        margin: 0 auto;
+        bottom: 34rem; } }
   .about__right--para {
     font-weight: 300;
     padding: 0.5rem;
@@ -688,6 +756,11 @@ textarea.input {
       .about__right--para {
         position: absolute;
         font-size: 2.1rem;
+        margin: 0 auto; } }
+    @media only screen and (max-width: 600px) {
+      .about__right--para {
+        position: absolute;
+        font-size: 1.6rem;
         margin: 0 auto; } }
 
 /*about__right- end of section*/
@@ -982,6 +1055,10 @@ textarea.input {
   .footer__content--a-item {
     min-width: 500px;
     font-size: 1.4rem; } }
+
+@media only screen and (max-width: 600px) {
+  .footer__content--a-item {
+    font-size: 1.3rem; } }
 
 /* Animation for Heading--section*/
 @keyframes bounceIn {

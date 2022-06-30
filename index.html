@@ -51,6 +51,20 @@
               src="img/pexels-taryn-elliott-5271927.mp4"
               type="video/mp4"
             />
+
+            <source src="/img/bg-video-small 1.mp4" type="video/webm" />
+
+            <source
+              src="/img/bg-video-small 1.mp4"
+              type="video/mp4"
+              media="all and (max-width: 700px)"
+            />
+
+            <source
+              src="img/pexels-taryn-elliott-5271927.mp4"
+              type="video/webm"
+              media="all and (max-width: 700px)"
+            />
           </video>
 
           <div class="header__heading">
@@ -236,23 +250,53 @@
             <input type="radio" class="radio" name="images" id="radio-12" />
 
             <div class="slide" id="slide-1">
-              <img src="img/wedding1.jpg" alt="" />
+              <img
+                srcset="/img/wedding1.jpg 300w, img/wedding1.jpg.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                alt="photo 1"
+                src="img/wedding1.jpg"
+                alt=""
+              />
             </div>
 
             <div class="slide" id="slide-2">
-              <img src="img/wedding2.jpg" alt="" />
+              <img
+                srcset="/img/wedding2.jpg 300w, img/wedding2.jpg.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                alt="photo 1"
+                src="img/wedding2.jpg"
+                alt=""
+              />
             </div>
 
             <div class="slide" id="slide-3">
-              <img src="img/wedding3.jpg" alt="" />
+              <img
+                srcset="/img/wedding3.jpg 300w, img/wedding3.jpg.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                alt="photo 1"
+                src="img/wedding3.jpg"
+                alt=""
+              />
             </div>
 
             <div class="slide" id="slide-4">
-              <img src="img/wedding4.jpg" alt="" />
+              <img
+                srcset="/img/wedding4.jpg 300w, img/wedding4.jpg.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                alt="photo 1"
+                src="img/wedding4.jpg"
+                alt=""
+              />
             </div>
 
             <div class="slide" id="slide-5">
-              <img src="/img/wedding5.jpg" alt="" />
+              <img
+                srcset="/img/wedding5.jpg 300w, img/wedding5.jpg.jpg 1000w"
+                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                alt="photo 1"
+                src="/img/wedding5.jpg"
+                alt=""
+              />
             </div>
 
             <div class="slide" id="slide-6">
@@ -328,7 +372,13 @@
             <input type="radio" class="radio" name="images1" id="radio-nr12" />
 
             <div class="slide" id="slide-nr1">
-              <img src="img/outdoor1.JPG" alt="" />
+              <img
+                srcset="/img/outdoor1.JPG 300w, img/outdoor1small.JPG 1000w"
+                sizes="(max-width:56.25em) 20vw, (max-width:37.5em) 30vw, 300px"
+                alt="photo 1"
+                src="img/outdoor1.JPG"
+                alt=""
+              />
             </div>
 
             <div class="slide" id="slide-nr2">
@@ -426,8 +476,8 @@
                 <h3 class="contact__me--title">Contact us</h3>
                 <div class="input-container">
                   <input type="text" name="name" class="input" />
-                  <label for="">Username</label>
-                  <span>Username</span>
+                  <label for="">Name</label>
+                  <span>Name</span>
                 </div>
                 <div class="input-container">
                   <input type="email" name="email" class="input" />
