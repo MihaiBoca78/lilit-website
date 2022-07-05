@@ -1124,6 +1124,14 @@ textarea.input {
     justify-content: center;
     text-align: center;
     margin: 4rem; }
+    @media only screen and (max-width: 26.5em) {
+      .footer__content--footer-icon {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: -4rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem; } }
     @media only screen and (max-width: 23.5em) {
       .footer__content--footer-icon {
         display: flex;
@@ -1163,7 +1171,7 @@ textarea.input {
         font-size: 1.7rem; } }
     @media only screen and (max-width: 26.5em) {
       .footer__content--a-item {
-        font-size: 1.7rem; } }
+        font-size: 1.4rem; } }
     @media only screen and (max-width: 23.5em) {
       .footer__content--a-item {
         font-size: 1.3rem; } }
