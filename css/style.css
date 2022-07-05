@@ -81,6 +81,15 @@ body {
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 8rem; }
+    @media only screen and (min-width: 26.5em) {
+      .contact__me--title {
+        font-size: 2.5rem; } }
+    @media only screen and (min-width: 23.5em) {
+      .contact__me--title {
+        font-size: 3.5rem; } }
+    @media only screen and (min-width: 20em) {
+      .contact__me--title {
+        font-size: 3.5rem; } }
   .contact__me--btn {
     padding: 0.6rem 1.3rem;
     background-color: #fff;
@@ -872,6 +881,15 @@ textarea.input {
   font-family: 'Dancing Script';
   align-items: center;
   color: #fff; }
+  @media only screen and (min-width: 26.5em) {
+    .outdoor-h2 {
+      margin-top: -16rem; } }
+  @media only screen and (min-width: 23.5em) {
+    .outdoor-h2 {
+      margin-top: -16rem; } }
+  @media only screen and (min-width: 20em) {
+    .outdoor-h2 {
+      margin-top: -16rem; } }
 
 .radio {
   display: none; }
@@ -1106,6 +1124,22 @@ textarea.input {
     justify-content: center;
     text-align: center;
     margin: 4rem; }
+    @media only screen and (max-width: 23.5em) {
+      .footer__content--footer-icon {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: -2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem; } }
+    @media only screen and (max-width: 20em) {
+      .footer__content--footer-icon {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: -2rem;
+        margin-top: 1rem;
+        margin-bottom: 2rem; } }
   .footer__content--footer-icon li {
     list-style: none; }
   .footer__content--footer-item {
@@ -1124,17 +1158,20 @@ textarea.input {
     text-decoration: none;
     color: #fff;
     font-size: 2rem; }
+    @media only screen and (max-width: 48em) {
+      .footer__content--a-item {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 26.5em) {
+      .footer__content--a-item {
+        font-size: 1.7rem; } }
+    @media only screen and (max-width: 23.5em) {
+      .footer__content--a-item {
+        font-size: 1.3rem; } }
+    @media only screen and (max-width: 20em) {
+      .footer__content--a-item {
+        font-size: 1.7rem; } }
   .footer__content--a-item:hover {
     color: #79dae8; }
-
-.footer__content--a-item {
-  /*@media only screen and (max-width: 600px) {
-    font-size: 1.3rem;
-  }*/ }
-  @media only screen and (max-width: 26.5em) {
-    .footer__content--a-item {
-      min-width: 500px;
-      font-size: 1.4rem; } }
 
 /* Animation for Heading--section*/
 @keyframes bounceIn {

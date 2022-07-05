@@ -46,6 +46,24 @@
     justify-content: center;
     text-align: center;
     margin: 4rem;
+
+    @media only screen and (max-width: $bp-mobile-m) {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: -2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-s) {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      margin: -2rem;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+    }
   }
 
   &--footer-icon li {
@@ -76,20 +94,25 @@
     text-decoration: none;
     color: $color-primary;
     font-size: 2rem;
+
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-l) {
+      font-size: 1.7rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-m) {
+      font-size: 1.3rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-s) {
+      font-size: 1.7rem;
+    }
   }
 
   &--a-item:hover {
     color: $color-secondary;
   }
-}
-
-.footer__content--a-item {
-  @media only screen and (max-width: $bp-mobile-l) {
-    min-width: 500px;
-    font-size: 1.4rem;
-  }
-
-  /*@media only screen and (max-width: 600px) {
-    font-size: 1.3rem;
-  }*/
 }
