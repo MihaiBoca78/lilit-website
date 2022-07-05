@@ -428,10 +428,10 @@ textarea.input {
         font-size: 5rem; } }
     @media only screen and (max-width: 26.5em) {
       .header__heading--h1 {
-        font-size: 3.7rem; } }
+        font-size: 3.5rem; } }
     @media only screen and (max-width: 23.5em) {
       .header__heading--h1 {
-        font-size: 3.7rem; } }
+        font-size: 3.5rem; } }
     @media only screen and (max-width: 20em) {
       .header__heading--h1 {
         font-size: 4.9rem; } }
@@ -496,7 +496,7 @@ textarea.input {
     .titel__logo {
       position: relative;
       left: 76%;
-      bottom: 36rem;
+      bottom: 28rem;
       font-size: 3rem; } }
   @media only screen and (max-width: 23.5em) {
     .titel__logo {
