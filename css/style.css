@@ -478,37 +478,37 @@ textarea.input {
 
 .titel__logo {
   position: relative;
-  bottom: 41%;
+  bottom: 36%;
   left: 70%; }
   @media only screen and (max-width: 90em) {
     .titel__logo {
       position: relative;
       left: 74%;
-      bottom: 29rem;
+      bottom: 23rem;
       font-size: 3rem; } }
   @media only screen and (max-width: 64em) {
     .titel__logo {
       position: relative;
-      left: 77%;
+      left: 74%;
       bottom: 23rem;
       font-size: 3rem; } }
   @media only screen and (max-width: 26.5em) {
     .titel__logo {
       position: relative;
-      left: 76%;
+      left: 71%;
       bottom: 21rem;
       font-size: 3rem; } }
   @media only screen and (max-width: 23.5em) {
     .titel__logo {
       position: relative;
-      left: 76%;
-      bottom: 26rem;
+      left: 70%;
+      bottom: 23rem;
       font-size: 2.5rem; } }
   @media only screen and (max-width: 20em) {
     .titel__logo {
       position: relative;
-      left: 76%;
-      bottom: 28rem;
+      left: 70%;
+      bottom: 24rem;
       font-size: 2.5rem; } }
 
 .titel__img {
@@ -775,19 +775,20 @@ textarea.input {
       .about__right--h2 {
         position: relative;
         margin: 0 auto;
-        bottom: 21rem; } }
+        bottom: 21rem;
+        font-size: 1.7rem; } }
     @media only screen and (max-width: 23.5em) {
       .about__right--h2 {
         position: relative;
         margin: 0 auto;
         bottom: 20rem;
-        font-size: 1.8rem; } }
+        font-size: 1.7rem; } }
     @media only screen and (max-width: 20em) {
       .about__right--h2 {
         position: relative;
         margin: 0 auto;
-        bottom: 23rem;
-        font-size: 1.8rem; } }
+        bottom: 21rem;
+        font-size: 1.7rem; } }
   .about__right--para {
     font-weight: 300;
     padding: 0.5rem;
@@ -833,7 +834,7 @@ textarea.input {
     @media only screen and (max-width: 20em) {
       .about__right--para {
         position: absolute;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         margin: 0 auto;
         padding-top: 2rem; } }
 
