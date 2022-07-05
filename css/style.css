@@ -1133,14 +1133,14 @@ textarea.input {
     margin: 4rem;
     line-height: 50px;
     border-radius: 50%;
-    margin-left: 3rem; }
+    margin-left: 1rem; }
     @media only screen and (max-width: 26.5em) {
       .footer__content--footer-icon li {
         margin-left: 1rem; } }
     @media only screen and (max-width: 23.5em) {
       .footer__content--footer-icon li {
         margin-left: 1rem; } }
-  s .footer__content--links {
+  .footer__content--links {
     display: flex;
     justify-content: space-between;
     text-align: center;
