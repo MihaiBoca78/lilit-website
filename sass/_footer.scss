@@ -46,33 +46,6 @@
     justify-content: center;
     text-align: center;
     margin: 4rem;
-
-    @media only screen and (max-width: $bp-mobile-l) {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      margin: -4rem;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    @media only screen and (max-width: $bp-mobile-m) {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      margin: -2rem;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-    }
-
-    @media only screen and (max-width: $bp-mobile-s) {
-      display: flex;
-      justify-content: center;
-      text-align: center;
-      margin: -2rem;
-      margin-top: 1rem;
-      margin-bottom: 2rem;
-    }
   }
 
   &--footer-icon li {
@@ -90,9 +63,20 @@
     margin: 4rem;
     line-height: 50px;
     border-radius: 50%;
-  }
 
-  &--links {
+    @media only screen and (max-width: $bp-mobile-l) {
+      margin-left: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-m) {
+      margin-left: 1rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-s) {
+    }
+    margin-left: 3rem;
+  }
+  s &--links {
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -109,7 +93,7 @@
     }
 
     @media only screen and (max-width: $bp-mobile-l) {
-      font-size: 1.4rem;
+      font-size: 1.2rem;
     }
 
     @media only screen and (max-width: $bp-mobile-m) {
