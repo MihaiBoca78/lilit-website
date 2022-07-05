@@ -508,7 +508,7 @@ textarea.input {
     .titel__logo {
       position: relative;
       left: 76%;
-      bottom: 33rem;
+      bottom: 28rem;
       font-size: 2.5rem; } }
 
 .titel__img {
@@ -733,14 +733,15 @@ textarea.input {
     @media only screen and (max-width: 26.5em) {
       .about__right--h1 {
         position: relative;
-        bottom: 20rem;
-        margin: 0 auto; } }
+        bottom: 21rem;
+        margin: 0 auto;
+        font-size: 5rem; } }
     @media only screen and (max-width: 23.5em) {
       .about__right--h1 {
         position: relative;
-        bottom: 18rem;
+        bottom: 19rem;
         margin: 0 auto;
-        font-size: 5rem; } }
+        font-size: 4rem; } }
     @media only screen and (max-width: 20em) {
       .about__right--h1 {
         position: relative;
@@ -774,12 +775,12 @@ textarea.input {
       .about__right--h2 {
         position: relative;
         margin: 0 auto;
-        bottom: 23rem; } }
+        bottom: 21rem; } }
     @media only screen and (max-width: 23.5em) {
       .about__right--h2 {
         position: relative;
         margin: 0 auto;
-        bottom: 19rem;
+        bottom: 20rem;
         font-size: 1.8rem; } }
     @media only screen and (max-width: 20em) {
       .about__right--h2 {

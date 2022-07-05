@@ -258,15 +258,16 @@
 
     @media only screen and (max-width: $bp-mobile-l) {
       position: relative;
-      bottom: 20rem;
+      bottom: 21rem;
       margin: 0 auto;
+      font-size: 5rem;
     }
 
     @media only screen and (max-width: $bp-mobile-m) {
       position: relative;
-      bottom: 18rem;
+      bottom: 19rem;
       margin: 0 auto;
-      font-size: 5rem;
+      font-size: 4rem;
     }
 
     @media only screen and (max-width: $bp-mobile-s) {
@@ -309,13 +310,13 @@
     @media only screen and (max-width: $bp-mobile-l) {
       position: relative;
       margin: 0 auto;
-      bottom: 23rem;
+      bottom: 21rem;
     }
 
     @media only screen and (max-width: $bp-mobile-m) {
       position: relative;
       margin: 0 auto;
-      bottom: 19rem;
+      bottom: 20rem;
       font-size: 1.8rem;
     }
 
