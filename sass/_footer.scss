@@ -65,7 +65,7 @@
     border-radius: 50%;
 
     @media only screen and (max-width: $bp-mobile-l) {
-      margin-left: 1rem;
+      margin-left: -1rem;
     }
 
     @media only screen and (max-width: $bp-mobile-m) {
@@ -97,11 +97,11 @@
     }
 
     @media only screen and (max-width: $bp-mobile-m) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     @media only screen and (max-width: $bp-mobile-s) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
