@@ -1139,7 +1139,7 @@ textarea.input {
         margin-left: 1rem; } }
     @media only screen and (max-width: 23.5em) {
       .footer__content--footer-icon li {
-        margin-left: 1rem; } }
+        margin-left: -1rem; } }
   .footer__content--links {
     display: flex;
     justify-content: space-between;
@@ -1157,10 +1157,10 @@ textarea.input {
         font-size: 1.2rem; } }
     @media only screen and (max-width: 23.5em) {
       .footer__content--a-item {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
     @media only screen and (max-width: 20em) {
       .footer__content--a-item {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
   .footer__content--a-item:hover {
     color: #79dae8; }
 
