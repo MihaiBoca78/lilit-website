@@ -1133,7 +1133,7 @@ textarea.input {
     margin: 4rem;
     line-height: 50px;
     border-radius: 50%;
-    margin-left: 1rem; }
+    margin-left: -1rem; }
     @media only screen and (max-width: 26.5em) {
       .footer__content--footer-icon li {
         margin-left: 1rem; } }
