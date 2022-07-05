@@ -1,59 +1,64 @@
 .titel__logo {
   position: relative;
-  bottom: 39%;
-  left: 68%;
+  bottom: 41%;
+  left: 70%;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-laptop-l) {
     position: relative;
-    left: 68%;
-    bottom: 39rem;
+    left: 74%;
+    bottom: 29rem;
+    font-size: 3rem;
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-laptop) {
     position: relative;
-    left: 76%;
-    bottom: 39rem;
+    left: 77%;
+    bottom: 23rem;
+    font-size: 3rem;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-mobile-l) {
     position: relative;
     left: 76%;
-    bottom: 39rem;
+    bottom: 36rem;
+    font-size: 3rem;
   }
 
-  @media only screen and (max-width: $bp-mitte) {
+  @media only screen and (max-width: $bp-mobile-m) {
     position: relative;
     left: 76%;
-    bottom: 39rem;
+    bottom: 26rem;
+    font-size: 2.5rem;
   }
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-mobile-s) {
     position: relative;
     left: 76%;
-    bottom: 39rem;
+    bottom: 33rem;
+    font-size: 2.5rem;
   }
 }
 
 .titel__img {
-  height: 10rem;
+  height: 9rem;
 
-  @media only screen and (max-width: $bp-largest) {
+  @media only screen and (max-width: $bp-laptop-l) {
     height: 10rem;
   }
 
-  @media only screen and (max-width: $bp-large) {
+  @media only screen and (max-width: $bp-laptop) {
     height: 10rem;
   }
 
-  @media only screen and (max-width: $bp-medium) {
+  @media only screen and (max-width: $bp-tablet) {
     height: 10rem;
   }
 
-  @media only screen and (max-width: $bp-mitte) {
+  /* @media only screen and (max-width: $bp-mitte) {
     height: 10rem;
-  }
+  }*/
 
-  @media only screen and (max-width: $bp-small) {
+  @media only screen and (max-width: $bp-mobile-l) {
     height: 10rem;
   }
 }

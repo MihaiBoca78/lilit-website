@@ -22,7 +22,7 @@
     animation-duration: 10s;
     animation-fill-mode: both;
     overflow: hidden;
-    font-size: 7rem;
+    font-size: 9rem;
     color: $color-primary;
     display: flex;
     justify-content: center;
@@ -31,16 +31,59 @@
     font-weight: 1000;
     font-family: 'Dancing Script';
     padding-bottom: 1rem;
+
+    @media only screen and (max-width: $bp-laptop-l) {
+      font-size: 7rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop) {
+      font-size: 6rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-l) {
+      font-size: 3.7rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-m) {
+      font-size: 3.7rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-s) {
+      font-size: 4.9rem;
+    }
   }
 
   &--h3 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     letter-spacing: 4px;
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Dancing Script';
     color: $color-primary;
     line-height: 1;
+
+    @media only screen and (max-width: $bp-laptop-l) {
+      font-size: 4.5rem;
+    }
+
+    @media only screen and (max-width: $bp-laptop) {
+      font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet) {
+      font-size: 3.2rem;
+    }
+
+    @media only screen and (max-width: $bp-mobile-l) {
+      font-size: 2.6rem;
+    }
+    @media only screen and (max-width: $bp-mobile-s) {
+      font-size: 3.3rem;
+    }
   }
 }
 
@@ -49,9 +92,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-height: 100%;
-  min-width: 100%;
+  height: 100%;
+  width: 100%;
   z-index: -1;
   object-fit: cover;
   opacity: 0.7;
+
+  @media only screen and (min-width: $bp-mobile-s) {
+    width: 105%;
+  }
+  @media only screen and (min-width: $bp-mobile-m) {
+    width: 100%;
+  }
 }
