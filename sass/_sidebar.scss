@@ -7,8 +7,6 @@
 }
 
 .navigation {
-  display: grid;
-  grid-area: sidebar;
   position: fixed;
   inset: 0 0 -29px;
   width: 85px;
@@ -20,6 +18,22 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: $bp-mobile-l) {
+    width: 10%;
+  }
+
+  @media only screen and (max-width: $bp-mobile-m) {
+    width: 10%;
+  }
+
+  @media only screen and (max-width: $bp-mobile-s) {
+    width: 10%;
+  }
+
+  @media only screen and (max-width: $bp-tablet) {
+    width: 14%;
+  }
 }
 
 .navigation.open {

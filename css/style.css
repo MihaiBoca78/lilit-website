@@ -262,8 +262,6 @@ textarea.input {
   z-index: 3; }
 
 .navigation {
-  display: grid;
-  grid-area: sidebar;
   position: fixed;
   inset: 0 0 -29px;
   width: 85px;
@@ -272,6 +270,18 @@ textarea.input {
   display: flex;
   justify-content: center;
   align-items: center; }
+  @media only screen and (max-width: 26.5em) {
+    .navigation {
+      width: 10%; } }
+  @media only screen and (max-width: 23.5em) {
+    .navigation {
+      width: 10%; } }
+  @media only screen and (max-width: 20em) {
+    .navigation {
+      width: 10%; } }
+  @media only screen and (max-width: 48em) {
+    .navigation {
+      width: 14%; } }
 
 .navigation.open {
   width: 250px; }
