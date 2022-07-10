@@ -1023,23 +1023,25 @@ textarea.input {
     min-width: 600px;
   }
 */ }
-  @media only screen and (max-width: 90em) {
-    .container {
-      position: relative;
-      min-width: 1000px; } }
   @media only screen and (max-width: 64em) {
     .container {
       position: relative;
       margin: auto;
-      min-width: 900px; } }
+      min-width: 800px; } }
   @media only screen and (max-width: 48em) {
     .container {
       position: relative;
       margin: auto;
-      min-width: 700px; } }
+      min-width: 400px; } }
   @media only screen and (max-width: 26.5em) {
     .container {
-      min-width: 500px; } }
+      min-width: 100px; } }
+  @media only screen and (max-width: 23.5em) {
+    .container {
+      min-width: 100px; } }
+  @media only screen and (max-width: 20em) {
+    .container {
+      min-width: 100px; } }
 
 .slider {
   width: 100%;

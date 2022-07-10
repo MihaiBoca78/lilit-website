@@ -63,23 +63,16 @@
   margin: auto;
   min-width: 1100px;
 
-  @media only screen and (max-width: $bp-laptop-l) {
-    position: relative;
-
-    //padding-right: 5%;
-    min-width: 1000px;
-  }
-
   @media only screen and (max-width: $bp-laptop) {
     position: relative;
     margin: auto;
-    min-width: 900px;
+    min-width: 800px;
   }
 
   @media only screen and (max-width: $bp-tablet) {
     position: relative;
     margin: auto;
-    min-width: 700px;
+    min-width: 400px;
   }
 
   /*@media only screen and (max-width: $bp-mitte) {
@@ -87,7 +80,15 @@
   }
 */
   @media only screen and (max-width: $bp-mobile-l) {
-    min-width: 500px;
+    min-width: 100px;
+  }
+
+  @media only screen and (max-width: $bp-mobile-m) {
+    min-width: 100px;
+  }
+
+  @media only screen and (max-width: $bp-mobile-s) {
+    min-width: 100px;
   }
 }
 
