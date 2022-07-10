@@ -63,6 +63,10 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50rem;
     margin-bottom: 40rem; }
+    @media only screen and (max-width: 26.5em) {
+      .contact__me--form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
     @media only screen and (max-width: 20em) {
       .contact__me--form {
         display: grid;
@@ -915,6 +919,27 @@ textarea.input {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/img/bg-gallery6.jpg") center/cover no-repeat fixed;
   margin-top: -8rem;
   margin-bottom: -11rem; }
+  @media only screen and (max-width: 20em) {
+    .gallery {
+      display: grid;
+      grid-area: gallery;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/img/bg-gallery6.jpg") center/cover no-repeat fixed;
+      margin-top: -8rem;
+      margin-bottom: -12rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .gallery {
+      display: grid;
+      grid-area: gallery;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/img/bg-gallery6.jpg") center/cover no-repeat fixed;
+      margin-top: -8rem;
+      margin-bottom: -12rem; } }
+  @media only screen and (max-width: 26.5em) {
+    .gallery {
+      display: grid;
+      grid-area: gallery;
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/img/bg-gallery6.jpg") center/cover no-repeat fixed;
+      margin-top: -8rem;
+      margin-bottom: -12rem; } }
 
 .gallery-h1 {
   display: flex;
@@ -960,13 +985,13 @@ textarea.input {
   color: #fff; }
   @media only screen and (min-width: 26.5em) {
     .outdoor-h2 {
-      margin-top: -16rem; } }
+      padding-top: -11rem; } }
   @media only screen and (min-width: 23.5em) {
     .outdoor-h2 {
-      margin-top: -16rem; } }
+      padding-top: -11rem; } }
   @media only screen and (min-width: 20em) {
     .outdoor-h2 {
-      margin-top: -16rem; } }
+      padding-top: -11rem; } }
 
 .radio {
   display: none; }
@@ -992,13 +1017,16 @@ textarea.input {
       min-width: 600px; } }
   @media only screen and (max-width: 26.5em) {
     .container {
-      min-width: 380px; } }
+      min-width: 380px;
+      margin-bottom: -46rem; } }
   @media only screen and (max-width: 23.5em) {
     .container {
-      min-width: 350px; } }
+      min-width: 350px;
+      margin-bottom: -46rem; } }
   @media only screen and (max-width: 20em) {
     .container {
-      min-width: 300px; } }
+      min-width: 300px;
+      margin-bottom: -72rem; } }
 
 .slider {
   width: 100%;
@@ -1010,6 +1038,9 @@ textarea.input {
   border: 1px #2e2e2e;
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
   border-radius: 20px; }
+  @media only screen and (max-width: 20em) {
+    .slider {
+      margin-bottom: 30rem; } }
 
 .slide {
   position: absolute;

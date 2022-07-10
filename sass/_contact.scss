@@ -29,6 +29,10 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50rem;
     margin-bottom: 40rem;
+    @media only screen and (max-width: $bp-mobile-l) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
     @media only screen and (max-width: $bp-mobile-s) {
       display: grid;
       grid-template-columns: repeat(1, 1fr);
