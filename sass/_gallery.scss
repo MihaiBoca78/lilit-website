@@ -72,7 +72,7 @@
   @media only screen and (max-width: $bp-tablet) {
     position: relative;
     margin: auto;
-    min-width: 400px;
+    min-width: 600px;
   }
 
   /*@media only screen and (max-width: $bp-mitte) {
@@ -80,15 +80,15 @@
   }
 */
   @media only screen and (max-width: $bp-mobile-l) {
-    min-width: 100px;
+    min-width: 300px;
   }
 
   @media only screen and (max-width: $bp-mobile-m) {
-    min-width: 100px;
+    min-width: 300px;
   }
 
   @media only screen and (max-width: $bp-mobile-s) {
-    min-width: 100px;
+    min-width: 300px;
   }
 }
 
