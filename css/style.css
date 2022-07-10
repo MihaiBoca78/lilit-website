@@ -30,25 +30,9 @@ body {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 8rem minmax(min-content, max-content);
+  grid-template-columns: minmax(min-content, max-content);
   grid-template-rows: 1fr min-content minmax(1fr);
   grid-template-areas: 'sidebar header header' 'sidebar aboutme aboutme ' 'sidebar gallery gallery' 'sidebar contact contact ' 'sidebar main-footer main-footer '; }
-  @media only screen and (min-width: 48em) {
-    .container {
-      grid-template-columns: minmax(min-content, max-content);
-      grid-template-rows: 1fr min-content minmax(1fr); } }
-  @media only screen and (min-width: 26.5em) {
-    .container {
-      grid-template-columns: minmax(min-content, max-content);
-      grid-template-rows: 1fr min-content minmax(1fr); } }
-  @media only screen and (min-width: 23.5em) {
-    .container {
-      grid-template-columns: minmax(min-content, max-content);
-      grid-template-rows: 1fr min-content minmax(1fr); } }
-  @media only screen and (min-width: 20em) {
-    .container {
-      grid-template-columns: minmax(min-content, max-content);
-      grid-template-rows: 1fr min-content minmax(1fr); } }
 
 .contact {
   display: grid;
@@ -79,6 +63,14 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50rem;
     margin-bottom: 40rem; }
+    @media only screen and (max-width: 20em) {
+      .contact__me--form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
+    @media only screen and (max-width: 23.5em) {
+      .contact__me--form {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); } }
   .contact__me--contact-form {
     background: #79dae8;
     position: relative; }
@@ -97,13 +89,13 @@ body {
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 8rem; }
-    @media only screen and (min-width: 26.5em) {
+    @media only screen and (max-width: 26.5em) {
       .contact__me--title {
         font-size: 2.5rem; } }
-    @media only screen and (min-width: 23.5em) {
+    @media only screen and (max-width: 23.5em) {
       .contact__me--title {
         font-size: 2.5rem; } }
-    @media only screen and (min-width: 20em) {
+    @media only screen and (max-width: 20em) {
       .contact__me--title {
         font-size: 2.5rem; } }
   .contact__me--btn {
@@ -117,22 +109,7 @@ body {
     outline: none;
     cursor: pointer;
     transition: 0.3s;
-    margin: 0;
-    /*
-    @media only screen and (max-width: $bp-small) {
-      padding: 0.6rem 1.3rem;
-      background-color: $color-primary;
-      border: 2px solid #fafafa;
-      font-size: 2.6rem;
-      color: $color-secondary;
-      line-height: 1;
-      border-radius: 25px;
-      outline: none;
-      cursor: pointer;
-      transition: 0.3s;
-      margin: 0;
-    }
-    */ }
+    margin: 0; }
     @media only screen and (max-width: 64em) {
       .contact__me--btn {
         padding: 0.6rem 1.3rem;
@@ -525,25 +502,21 @@ textarea.input {
     width: 100%;
     height: 100vh;
     position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    padding: 0;
     overflow: hidden; }
 
 .header__heading {
-  text-align: center; }
+  padding-top: 20rem; }
   .header__heading--h1 {
     animation-name: bounceIn;
     animation-duration: 10s;
     animation-fill-mode: both;
     overflow: hidden;
     font-size: 9rem;
-    color: #fff;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    text-align: center;
+    color: #fff;
     font-weight: 1000;
     font-family: 'Dancing Script';
     padding-bottom: 1rem; }
@@ -555,17 +528,20 @@ textarea.input {
         font-size: 6rem; } }
     @media only screen and (max-width: 48em) {
       .header__heading--h1 {
-        font-size: 5rem; } }
+        font-size: 4rem; } }
     @media only screen and (max-width: 26.5em) {
       .header__heading--h1 {
-        font-size: 3.2rem; } }
+        font-size: 3rem; } }
     @media only screen and (max-width: 23.5em) {
       .header__heading--h1 {
-        font-size: 3.2rem; } }
+        font-size: 2.9rem; } }
     @media only screen and (max-width: 20em) {
       .header__heading--h1 {
-        font-size: 4.9rem; } }
+        font-size: 2.9rem; } }
   .header__heading--h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
     font-size: 4.5rem;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -581,13 +557,13 @@ textarea.input {
         font-size: 3.5rem; } }
     @media only screen and (max-width: 48em) {
       .header__heading--h3 {
-        font-size: 3.2rem; } }
+        font-size: 2.6rem; } }
     @media only screen and (max-width: 26.5em) {
       .header__heading--h3 {
-        font-size: 2.6rem; } }
+        font-size: 2rem; } }
     @media only screen and (max-width: 20em) {
       .header__heading--h3 {
-        font-size: 3.3rem; } }
+        font-size: 2rem; } }
 
 .bg-video__content {
   position: absolute;
@@ -607,57 +583,20 @@ textarea.input {
       width: 100%; } }
 
 .titel__logo {
-  position: relative;
-  bottom: 36%;
-  left: 70%; }
-  @media only screen and (max-width: 90em) {
-    .titel__logo {
-      position: relative;
-      left: 74%;
-      bottom: 23rem;
-      font-size: 3rem; } }
-  @media only screen and (max-width: 64em) {
-    .titel__logo {
-      position: relative;
-      left: 74%;
-      bottom: 23rem;
-      font-size: 3rem; } }
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 6rem;
+  padding-right: 5rem; }
   @media only screen and (max-width: 26.5em) {
     .titel__logo {
-      position: relative;
-      left: 71%;
-      bottom: 21rem;
-      font-size: 3rem; } }
-  @media only screen and (max-width: 23.5em) {
-    .titel__logo {
-      position: relative;
-      left: 70%;
-      bottom: 23rem;
-      font-size: 2.5rem; } }
-  @media only screen and (max-width: 20em) {
-    .titel__logo {
-      position: relative;
-      left: 70%;
-      bottom: 24rem;
-      font-size: 2.5rem; } }
+      padding-top: 6rem;
+      padding-right: 2rem; } }
 
 .titel__img {
-  height: 9rem;
-  /* @media only screen and (max-width: $bp-mitte) {
-    height: 10rem;
-  }*/ }
-  @media only screen and (max-width: 90em) {
-    .titel__img {
-      height: 10rem; } }
-  @media only screen and (max-width: 64em) {
-    .titel__img {
-      height: 10rem; } }
-  @media only screen and (max-width: 48em) {
-    .titel__img {
-      height: 10rem; } }
+  height: 9rem; }
   @media only screen and (max-width: 26.5em) {
     .titel__img {
-      height: 10rem; } }
+      height: 5rem; } }
 
 .aboutme {
   height: 100vh;
@@ -708,7 +647,8 @@ textarea.input {
         border-radius: 20px;
         box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
         top: -4rem;
-        margin: 0 auto; } }
+        margin: 0 auto;
+        margin-right: 4rem; } }
     @media only screen and (max-width: 48em) {
       .about__left--card {
         position: relative;
@@ -722,7 +662,7 @@ textarea.input {
     @media only screen and (max-width: 26.5em) {
       .about__left--card {
         position: relative;
-        width: 350px;
+        width: 310px;
         height: 190px;
         background: #fff;
         border-radius: 20px;
@@ -985,6 +925,22 @@ textarea.input {
   font-size: 8rem;
   color: #fff;
   font-family: 'Dancing Script'; }
+  @media only screen and (max-width: 48em) {
+    .gallery-h1 {
+      margin-top: 34rem;
+      padding-bottom: 4rem; } }
+  @media only screen and (max-width: 26.5em) {
+    .gallery-h1 {
+      margin-top: 34rem;
+      padding-bottom: 4rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .gallery-h1 {
+      margin-top: 34rem;
+      padding-bottom: 4rem; } }
+  @media only screen and (max-width: 20em) {
+    .gallery-h1 {
+      margin-top: 34rem;
+      padding-bottom: 4rem; } }
 
 .gallery-h2 {
   font-size: 4rem;
@@ -1019,6 +975,7 @@ textarea.input {
   position: relative;
   margin: auto;
   min-width: 1100px;
+  margin: 0 auto;
   /*@media only screen and (max-width: $bp-mitte) {
     min-width: 600px;
   }
@@ -1035,10 +992,10 @@ textarea.input {
       min-width: 600px; } }
   @media only screen and (max-width: 26.5em) {
     .container {
-      min-width: 300px; } }
+      min-width: 380px; } }
   @media only screen and (max-width: 23.5em) {
     .container {
-      min-width: 300px; } }
+      min-width: 350px; } }
   @media only screen and (max-width: 20em) {
     .container {
       min-width: 300px; } }
@@ -1084,6 +1041,30 @@ textarea.input {
   margin: 0 10px;
   border-radius: 40px;
   cursor: pointer; }
+  @media only screen and (max-width: 26.5em) {
+    .dots label {
+      width: 18px;
+      height: 18px;
+      background: #fff;
+      margin: 0 10px;
+      border-radius: 40px;
+      cursor: pointer; } }
+  @media only screen and (max-width: 23.5em) {
+    .dots label {
+      width: 26px;
+      height: 14px;
+      background: #fff;
+      margin: 0 10px;
+      border-radius: 50%;
+      cursor: pointer; } }
+  @media only screen and (max-width: 20em) {
+    .dots label {
+      width: 28px;
+      height: 14px;
+      background: #fff;
+      margin: 0 10px;
+      border-radius: 40px;
+      cursor: pointer; } }
 
 .dots label:hover {
   opacity: 0.7; }
@@ -1207,6 +1188,42 @@ textarea.input {
   width: 60px;
   transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   overflow: hidden; }
+  @media only screen and (max-width: 23.5em) {
+    #radio-nr1:checked ~ .dots #label-nr1,
+    #radio-nr2:checked ~ .dots #label-nr2,
+    #radio-nr3:checked ~ .dots #label-nr3,
+    #radio-nr4:checked ~ .dots #label-nr4,
+    #radio-nr5:checked ~ .dots #label-nr5,
+    #radio-nr6:checked ~ .dots #label-nr6,
+    #radio-nr7:checked ~ .dots #label-nr7,
+    #radio-nr8:checked ~ .dots #label-nr8,
+    #radio-nr9:checked ~ .dots #label-nr9,
+    #radio-nr10:checked ~ .dots #label-nr10,
+    #radio-nr11:checked ~ .dots #label-nr11,
+    #radio-nr12:checked ~ .dots #label-nr12 {
+      background: #79dae8;
+      opacity: 1;
+      width: 60px;
+      transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      overflow: hidden; } }
+  @media only screen and (max-width: 20em) {
+    #radio-nr1:checked ~ .dots #label-nr1,
+    #radio-nr2:checked ~ .dots #label-nr2,
+    #radio-nr3:checked ~ .dots #label-nr3,
+    #radio-nr4:checked ~ .dots #label-nr4,
+    #radio-nr5:checked ~ .dots #label-nr5,
+    #radio-nr6:checked ~ .dots #label-nr6,
+    #radio-nr7:checked ~ .dots #label-nr7,
+    #radio-nr8:checked ~ .dots #label-nr8,
+    #radio-nr9:checked ~ .dots #label-nr9,
+    #radio-nr10:checked ~ .dots #label-nr10,
+    #radio-nr11:checked ~ .dots #label-nr11,
+    #radio-nr12:checked ~ .dots #label-nr12 {
+      background: #79dae8;
+      opacity: 1;
+      width: 60px;
+      transition: all 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      overflow: hidden; } }
 
 .main-footer {
   display: grid;
@@ -1255,15 +1272,9 @@ textarea.input {
   .footer__content--footer-icon li {
     margin: 4rem;
     line-height: 50px;
-    border-radius: 50%;
-    margin-left: -1rem; }
-    @media only screen and (max-width: 26.5em) {
-      .footer__content--footer-icon li {
-        margin-left: -1rem; } }
-    @media only screen and (max-width: 23.5em) {
-      .footer__content--footer-icon li {
-        margin-left: -1rem; } }
+    border-radius: 50%; }
   .footer__content--links {
+    display: block;
     display: flex;
     justify-content: space-between;
     text-align: center;
@@ -1271,19 +1282,19 @@ textarea.input {
   .footer__content--a-item {
     text-decoration: none;
     color: #fff;
-    font-size: 2rem; }
+    font-size: 2.5rem; }
     @media only screen and (max-width: 48em) {
       .footer__content--a-item {
-        font-size: 1.7rem; } }
+        font-size: 2rem; } }
     @media only screen and (max-width: 26.5em) {
       .footer__content--a-item {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
     @media only screen and (max-width: 23.5em) {
       .footer__content--a-item {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
     @media only screen and (max-width: 20em) {
       .footer__content--a-item {
-        font-size: 1.2rem; } }
+        font-size: 1rem; } }
   .footer__content--a-item:hover {
     color: #79dae8; }
 

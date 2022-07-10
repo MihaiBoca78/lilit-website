@@ -29,6 +29,15 @@
     grid-template-columns: repeat(2, 1fr);
     margin-top: 50rem;
     margin-bottom: 40rem;
+    @media only screen and (max-width: $bp-mobile-s) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    @media only screen and (max-width: $bp-mobile-m) {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 
   &--contact-form {
@@ -54,15 +63,15 @@
     font-size: 4rem;
     line-height: 1;
     margin-bottom: 8rem;
-    @media only screen and (min-width: $bp-mobile-l) {
+    @media only screen and (max-width: $bp-mobile-l) {
       font-size: 2.5rem;
     }
 
-    @media only screen and (min-width: $bp-mobile-m) {
+    @media only screen and (max-width: $bp-mobile-m) {
       font-size: 2.5rem;
     }
 
-    @media only screen and (min-width: $bp-mobile-s) {
+    @media only screen and (max-width: $bp-mobile-s) {
       font-size: 2.5rem;
     }
   }
@@ -107,21 +116,6 @@
       transition: 0.3s;
       margin: 0;
     }
-    /*
-    @media only screen and (max-width: $bp-small) {
-      padding: 0.6rem 1.3rem;
-      background-color: $color-primary;
-      border: 2px solid #fafafa;
-      font-size: 2.6rem;
-      color: $color-secondary;
-      line-height: 1;
-      border-radius: 25px;
-      outline: none;
-      cursor: pointer;
-      transition: 0.3s;
-      margin: 0;
-    }
-    */
   }
 
   &--btn:hover {

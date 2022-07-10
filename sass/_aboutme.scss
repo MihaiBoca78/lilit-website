@@ -54,6 +54,7 @@
       box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
       top: -4rem;
       margin: 0 auto;
+      margin-right: 4rem;
     }
 
     @media only screen and (max-width: $bp-tablet) {
@@ -69,7 +70,7 @@
 
     @media only screen and (max-width: $bp-mobile-l) {
       position: relative;
-      width: 350px;
+      width: 310px;
       height: 190px;
       background: #fff;
       border-radius: 20px;
