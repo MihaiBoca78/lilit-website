@@ -920,7 +920,7 @@ textarea.input {
     @media only screen and (max-width: 20em) {
       .about__right--para {
         position: absolute;
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         margin: 0 auto;
         padding-top: 2rem; } }
 
@@ -1038,7 +1038,7 @@ textarea.input {
   @media only screen and (max-width: 20em) {
     .container {
       min-width: 300px;
-      margin-bottom: -43rem; } }
+      margin-bottom: -33rem; } }
 
 .slider {
   width: 100%;
