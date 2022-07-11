@@ -253,8 +253,9 @@
 
     @media only screen and (max-width: $bp-tablet) {
       position: relative;
-      bottom: 18rem;
+      bottom: 16rem;
       margin: 0 auto;
+      font-size: 4rem;
     }
 
     @media only screen and (max-width: $bp-mobile-l) {
@@ -304,8 +305,8 @@
     @media only screen and (max-width: $bp-tablet) {
       position: relative;
       margin: 0 auto;
-      bottom: 19rem;
-      font-size: 2.7rem;
+      bottom: 16rem;
+      font-size: 2.5rem;
     }
 
     @media only screen and (max-width: $bp-mobile-l) {
@@ -359,7 +360,7 @@
 
     @media only screen and (max-width: $bp-tablet) {
       position: absolute;
-      font-size: 1.7rem;
+      font-size: 1.4rem;
       margin: 0 auto;
       padding-top: 5rem;
     }

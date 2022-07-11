@@ -814,8 +814,9 @@ textarea.input {
     @media only screen and (max-width: 48em) {
       .about__right--h1 {
         position: relative;
-        bottom: 18rem;
-        margin: 0 auto; } }
+        bottom: 16rem;
+        margin: 0 auto;
+        font-size: 4rem; } }
     @media only screen and (max-width: 26.5em) {
       .about__right--h1 {
         position: relative;
@@ -855,8 +856,8 @@ textarea.input {
       .about__right--h2 {
         position: relative;
         margin: 0 auto;
-        bottom: 19rem;
-        font-size: 2.7rem; } }
+        bottom: 16rem;
+        font-size: 2.5rem; } }
     @media only screen and (max-width: 26.5em) {
       .about__right--h2 {
         position: relative;
@@ -902,7 +903,7 @@ textarea.input {
     @media only screen and (max-width: 48em) {
       .about__right--para {
         position: absolute;
-        font-size: 1.7rem;
+        font-size: 1.4rem;
         margin: 0 auto;
         padding-top: 5rem; } }
     @media only screen and (max-width: 26.5em) {
@@ -1030,7 +1031,7 @@ textarea.input {
   @media only screen and (max-width: 26.5em) {
     .container {
       min-width: 380px;
-      margin-bottom: -36rem; } }
+      margin-bottom: -28rem; } }
   @media only screen and (max-width: 23.5em) {
     .container {
       min-width: 350px;
