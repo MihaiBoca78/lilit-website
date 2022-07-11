@@ -37,7 +37,7 @@
       url('/img/bg-gallery6.jpg') center/cover no-repeat fixed;
 
     margin-top: -8rem;
-    margin-bottom: -12rem;
+    margin-bottom: -15rem;
   }
 }
 
@@ -130,17 +130,17 @@
 
   @media only screen and (max-width: $bp-mobile-l) {
     min-width: 380px;
-    margin-bottom: -46rem;
+    margin-bottom: -36rem;
   }
 
   @media only screen and (max-width: $bp-mobile-m) {
     min-width: 350px;
-    margin-bottom: -46rem;
+    margin-bottom: -29rem;
   }
 
   @media only screen and (max-width: $bp-mobile-s) {
     min-width: 300px;
-    margin-bottom: -72rem;
+    margin-bottom: -43rem;
   }
 }
 

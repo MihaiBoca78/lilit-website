@@ -90,7 +90,7 @@ body {
   .contact__me--title {
     color: #fff;
     font-weight: 500;
-    font-size: 4rem;
+    font-size: 3.3rem;
     line-height: 1;
     margin-bottom: 8rem; }
     @media only screen and (max-width: 26.5em) {
@@ -464,9 +464,21 @@ textarea.input {
   transition: 0.4s;
   box-shadow: 0 -8px 0 #79dae8;
   padding-right: 6rem; }
+  @media only screen and (max-width: 26.5em) {
+    .mobile-nav {
+      padding-right: 10rem; } }
+  @media only screen and (max-width: 23.5em) {
+    .mobile-nav {
+      padding-right: 11rem; } }
+  @media only screen and (max-width: 20em) {
+    .mobile-nav {
+      padding-right: 9rem; } }
 
 .mobile-nav.is-active {
   left: 114px; }
+  @media only screen and (max-width: 20em) {
+    .mobile-nav.is-active {
+      left: 66px; } }
 
 .mobile-nav a {
   display: block;
@@ -939,7 +951,7 @@ textarea.input {
       grid-area: gallery;
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url("/img/bg-gallery6.jpg") center/cover no-repeat fixed;
       margin-top: -8rem;
-      margin-bottom: -12rem; } }
+      margin-bottom: -15rem; } }
 
 .gallery-h1 {
   display: flex;
@@ -1018,15 +1030,15 @@ textarea.input {
   @media only screen and (max-width: 26.5em) {
     .container {
       min-width: 380px;
-      margin-bottom: -46rem; } }
+      margin-bottom: -36rem; } }
   @media only screen and (max-width: 23.5em) {
     .container {
       min-width: 350px;
-      margin-bottom: -46rem; } }
+      margin-bottom: -29rem; } }
   @media only screen and (max-width: 20em) {
     .container {
       min-width: 300px;
-      margin-bottom: -72rem; } }
+      margin-bottom: -43rem; } }
 
 .slider {
   width: 100%;
@@ -1295,6 +1307,9 @@ textarea.input {
     justify-content: center;
     text-align: center;
     margin: 4rem; }
+    @media only screen and (max-width: 48em) {
+      .footer__content--footer-icon {
+        margin: 1rem; } }
   .footer__content--footer-icon li {
     list-style: none; }
   .footer__content--footer-item {
@@ -1304,6 +1319,9 @@ textarea.input {
     margin: 4rem;
     line-height: 50px;
     border-radius: 50%; }
+    @media only screen and (max-width: 26.5em) {
+      .footer__content--footer-icon li {
+        margin: 2rem; } }
   .footer__content--links {
     display: block;
     display: flex;
@@ -1313,19 +1331,19 @@ textarea.input {
   .footer__content--a-item {
     text-decoration: none;
     color: #fff;
-    font-size: 2.5rem; }
+    font-size: 2.3rem; }
     @media only screen and (max-width: 48em) {
       .footer__content--a-item {
-        font-size: 2rem; } }
+        font-size: 1.5rem; } }
     @media only screen and (max-width: 26.5em) {
       .footer__content--a-item {
-        font-size: 1rem; } }
+        font-size: 1.2rem; } }
     @media only screen and (max-width: 23.5em) {
       .footer__content--a-item {
         font-size: 1rem; } }
     @media only screen and (max-width: 20em) {
       .footer__content--a-item {
-        font-size: 1rem; } }
+        font-size: 1.2rem; } }
   .footer__content--a-item:hover {
     color: #79dae8; }
 

@@ -258,10 +258,26 @@
   transition: 0.4s;
   box-shadow: 0 -8px 0 $color-secondary;
   padding-right: 6rem;
+
+  @media only screen and (max-width: $bp-mobile-l) {
+    padding-right: 10rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-m) {
+    padding-right: 11rem;
+  }
+
+  @media only screen and (max-width: $bp-mobile-s) {
+    padding-right: 9rem;
+  }
 }
 
 .mobile-nav.is-active {
   left: 114px;
+
+  @media only screen and (max-width: $bp-mobile-s) {
+    left: 66px;
+  }
 }
 
 .mobile-nav a {

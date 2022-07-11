@@ -46,6 +46,10 @@
     justify-content: center;
     text-align: center;
     margin: 4rem;
+
+    @media only screen and (max-width: $bp-tablet) {
+      margin: 1rem;
+    }
   }
 
   &--footer-icon li {
@@ -63,6 +67,9 @@
     margin: 4rem;
     line-height: 50px;
     border-radius: 50%;
+    @media only screen and (max-width: $bp-mobile-l) {
+      margin: 2rem;
+    }
   }
   &--links {
     display: block;
@@ -75,14 +82,14 @@
   &--a-item {
     text-decoration: none;
     color: $color-primary;
-    font-size: 2.5rem;
+    font-size: 2.3rem;
 
     @media only screen and (max-width: $bp-tablet) {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     @media only screen and (max-width: $bp-mobile-l) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
 
     @media only screen and (max-width: $bp-mobile-m) {
@@ -90,7 +97,7 @@
     }
 
     @media only screen and (max-width: $bp-mobile-s) {
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
