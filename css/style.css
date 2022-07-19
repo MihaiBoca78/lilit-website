@@ -1431,7 +1431,7 @@ textarea.input {
   .footer__content--a-item {
     text-decoration: none;
     color: #fff;
-    font-size: 2.2rem; }
+    font-size: 2rem; }
     @media only screen and (max-width: 48em) {
       .footer__content--a-item {
         font-size: 1.5rem; } }
