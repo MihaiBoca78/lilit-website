@@ -920,7 +920,7 @@ textarea.input {
       grid-template-columns: 2fr;
       align-items: center;
       justify-content: center;
-      padding-bottom: 74rem; } }
+      padding-bottom: 78rem; } }
   @media only screen and (max-width: 48em) {
     .about__right {
       display: grid;
