@@ -718,18 +718,17 @@ textarea.input {
   display: flex;
   align-items: center;
   justify-content: end;
-  /* @media only screen and (max-width: $bp-tablet) {
-    display: grid;
-    grid-template-columns: 2fr;
-    align-items: center;
-    justify-content: center;
-  }
-*/
   /*hover-section*/
   /*end of hover-section*/ }
   @media only screen and (max-width: 64em) {
     .about__left {
       padding-bottom: 15rem; } }
+  @media only screen and (max-width: 48em) {
+    .about__left {
+      display: grid;
+      grid-template-columns: 2fr;
+      align-items: center;
+      justify-content: center; } }
   @media only screen and (max-width: 26.5em) {
     .about__left {
       display: grid;
@@ -914,15 +913,14 @@ textarea.input {
   justify-content: center;
   padding: 0.5rem;
   text-align: center;
-  overflow: hidden;
-  /* @media only screen and (max-width: $bp-laptop-l) {
-    display: grid;
-    grid-template-columns: 2fr;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 74rem;
-  }
-*/ }
+  overflow: hidden; }
+  @media only screen and (max-width: 90em) {
+    .about__right {
+      display: grid;
+      grid-template-columns: 2fr;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 74rem; } }
   @media only screen and (max-width: 48em) {
     .about__right {
       display: grid;

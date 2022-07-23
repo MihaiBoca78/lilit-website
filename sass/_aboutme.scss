@@ -38,13 +38,13 @@
     padding-bottom: 15rem;
   }
 
-  /* @media only screen and (max-width: $bp-tablet) {
+  @media only screen and (max-width: $bp-tablet) {
     display: grid;
     grid-template-columns: 2fr;
     align-items: center;
     justify-content: center;
   }
-*/
+
   @media only screen and (max-width: $bp-mobile-l) {
     display: grid;
     grid-template-columns: 1fr;
@@ -283,14 +283,14 @@
   text-align: center;
   overflow: hidden;
 
-  /* @media only screen and (max-width: $bp-laptop-l) {
+  @media only screen and (max-width: $bp-laptop-l) {
     display: grid;
     grid-template-columns: 2fr;
     align-items: center;
     justify-content: center;
     padding-bottom: 74rem;
   }
-*/
+
   @media only screen and (max-width: $bp-tablet) {
     display: grid;
     grid-template-columns: 2fr;
