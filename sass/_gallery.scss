@@ -236,21 +236,6 @@
   transform: scale(1);
 }
 
-#radio-1:checked ~ #slide-1,
-#radio-2:checked ~ #slide-2,
-#radio-3:checked ~ #slide-3,
-#radio-4:checked ~ #slide-4,
-#radio-5:checked ~ #slide-5,
-#radio-6:checked ~ #slide-6,
-#radio-7:checked ~ #slide-7,
-#radio-8:checked ~ #slide-8,
-#radio-9:checked ~ #slide-9,
-#radio-10:checked ~ #slide-10,
-#radio-11:checked ~ #slide-11,
-#radio-12:checked ~ #slide-12 {
-  opacity: 1;
-}
-
 #radio-1:checked ~ .dots #label-1,
 #radio-2:checked ~ .dots #label-2,
 #radio-3:checked ~ .dots #label-3,
@@ -300,21 +285,6 @@
 #radio-nr11:checked ~ #slide-nr11 img,
 #radio-nr12:checked ~ #slide-nr12 img {
   transform: scale(1);
-}
-
-#radio-nr1:checked ~ #slide-nr1,
-#radio-nr2:checked ~ #slide-nr2,
-#radio-nr3:checked ~ #slide-nr3,
-#radio-nr4:checked ~ #slide-nr4,
-#radio-nr5:checked ~ #slide-nr5,
-#radio-nr6:checked ~ #slide-nr6,
-#radio-nr7:checked ~ #slide-nr7,
-#radio-nr8:checked ~ #slide-nr8,
-#radio-nr9:checked ~ #slide-nr9,
-#radio-nr10:checked ~ #slide-nr10,
-#radio-nr11:checked ~ #slide-nr11,
-#radio-nr12:checked ~ #slide-nr12 {
-  opacity: 1;
 }
 
 #radio-nr1:checked ~ .dots #label-nr1,
